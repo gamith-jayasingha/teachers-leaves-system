@@ -9,7 +9,6 @@ if (!isset($_SESSION['teacher_id'])) {
 
 $teacher_id = $_SESSION['teacher_id'];
 
-// Fetch teacher profile
 $query = "SELECT * FROM teachers WHERE id = $teacher_id";
 $result = $conn->query($query);
 $teacher = $result->fetch_assoc();
