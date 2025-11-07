@@ -13,7 +13,7 @@ $teacher_id = $_SESSION['teacher_id'];
 $selected_month = isset($_GET['month']) ? $_GET['month'] : date('Y-m');
 $days_in_month = date('t', strtotime($selected_month . '-01'));
 
-// Fetch leave data for the selected month
+
 $query = "SELECT leave_date, leave_type FROM leaves 
           WHERE teacher_id = $teacher_id AND leave_date LIKE '$selected_month%'";
 $result = $conn->query($query);
