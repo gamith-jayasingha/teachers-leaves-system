@@ -8,7 +8,7 @@ if (!isset($_SESSION['teacher_id'])) {
 
 $teacher_id = $_SESSION['teacher_id'];
 
-// Initialize variables
+
 $year = date('Y');
 $month = '';
 $date = '';
