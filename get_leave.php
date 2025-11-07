@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $leave_type = $_POST['leave_type'];
     $reason = $_POST['reason'];
 
-    // Check remaining leaves
+   
     $remaining_query = "SELECT 40 - COUNT(*) AS remaining 
                         FROM leaves WHERE teacher_id = $teacher_id AND YEAR(leave_date) = YEAR(CURDATE())";
     $remaining_result = $conn->query($remaining_query);
