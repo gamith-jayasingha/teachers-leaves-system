@@ -1,5 +1,5 @@
 <?php
-// Simulate the number of days remaining
+
 $daysRemaining = 2;
 
 // Check if payment has been made (this would typically come from a database)
