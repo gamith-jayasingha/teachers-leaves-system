@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($uploadOk) {
-        $stmt = $conn->prepare("INSERT INTO teachers (profile_photo, full_name, pin, school, district, phone, finish_leaves, total_leaves, registration_year) VALUES (?, ?, ?, ?, ?, ?, ?, 40, ?)");
+        $stmt = $conn->prepare("INSERT INTO teachers (profile_photo, full_name, pin, school, district, phone, finish_leaves, total_leaves, registration_year) VALUES (?, ?, ?, ?, ?, ?, ?, 42, ?)");
         $stmt->bind_param("ssssssis", $target_file, $full_name, $pin, $school, $district, $phone, $finish_leaves, $registration_year);
         
         if ($stmt->execute()) {
