@@ -25,7 +25,7 @@ try {
         $teacher = $result->fetch_assoc();
         $total_leaves = $teacher['total_leaves'];
         $current_taken_leaves = $teacher['finish_leaves']; // Leaves already taken this year
-        $profile_photo = $teacher['profile_photo']; // Profile photo URL or file path
+        $profile_photo = $teacher['profile_photo']; 
     } else {
         throw new Exception("Teacher not found.");
     }
